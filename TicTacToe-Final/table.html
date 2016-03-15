@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style/StyleSheet.css">
+<script type="text/javascript" src="script.js"></script>
+
+
+<title>Tic-Tac-Toe Game - Moon, Eunwon &amp; Chen, Clyde</title>
+</head>
+<body>
+    <h1>Tic-Tac-Toe Game</h1>
+	<div id="gPanel">
+        <img id="drag1" src="images/tiger.png" draggable="true" alt="tiger" ondragstart="drag(event)" />
+        &nbsp;
+	    <img id="drag2" src="images/rabbit.png" draggable="true" alt="rabbit" ondragstart="drag(event)" />
+	</div>
+    <table id="game">
+	    <tr class="row">
+		    <td id="div1" class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+		    <td id="div2" class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+		    <td id="div3" class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+	    </tr>
+	    <tr class="row">
+		    <td id="div4" class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+		    <td id="div5" class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+		    <td id="div6" class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+	    </tr>
+	    <tr class="row">
+		    <td id="div7" class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+		    <td id="div8" class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+		    <td id="div9" class="div" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+	    </tr>
+    </table>
+    <br />
+	<button id="restart" onclick="restart()">Restart</button>
+</body>
+</html>
