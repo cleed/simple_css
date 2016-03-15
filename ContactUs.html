@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+   <html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+		
+		<link rel="stylesheet" href="./style/ChineseZodiac.css" type="text/css" />
+	
+		<title>Contact Us</title>
+		
+	</head>
+	
+	<body>
+	
+		<div class="container">
+	
+			<div class="row visible-lg">
+				<div id="header" class="col-md-12">
+					<img src="./Images/ChineseZodiacBanner.png" alt="Chinese Zodiac Banner" />
+				</div>
+			</div>
+		
+		
+			<div class="row">
+					<!--Columns stack after the screen is smaller than 768px-->
+					<div id="nav" class="col-sm-12">
+						<a href="index.html"><img src="./Images/HomePage.png" alt="Home" onmouseover="this.src='./Images/HomePageRoll.png'" onmouseout="this.src='./Images/HomePage.png'"/></a>
+						<a href="12signs.html"><img src="./Images/12Signs.png" alt="12 Signs" onmouseover="this.src='./Images/12SignsRoll.png'" onmouseout="this.src='./Images/12Signs.png'"/></a>
+						<a href="contactus.html"><img src="./Images/ContactUs.png" alt="Contact Us" onmouseover="this.src='./Images/ContactUsRoll.png'" onmouseout="this.src='./Images/ContactUs.png'"/></a>
+					</div>
+				</div>
+				<hr />
+		
+				<!--This is the form. Reference the html file from COMP 1536 Lecture Sept 26 Week04-->
+				<!--acton="example.php". action is where the form data is being sent. see word .docx for link-->
+				<!--send as a get first to view what is being sent, then change to post-->
+				
+				<form id="form" action="http://php.vncvr.ca/zodiac/" method="post">
+						
+						<table id="contactus">
+
+							<tr>
+								<td>
+									Name: 
+								</td>
+								<td>
+									<input type="text" id="Name" name="Name" size="20" />
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									Email: 
+								</td>
+								<td>
+									<input type="text" id="Email" name="Email" size="20" />
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									Comments: 
+								</td>
+								<td>
+									<textarea rows="5" cols="30" id="Comment" name="Comment"></textarea>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<input type="submit" value="Submit" class="button" />
+								</td>
+							</tr>
+							
+						</table>
+					
+							<!--Hidden textbox's (Student1Name, Student2Name and Set)-->
+							<p>
+							<input type="hidden" value="Spencer Pollock" id="Student1Name" name="Student1Name" />
+							<input type="hidden" value="Clyde Chen" id="Student2Name" name="Student2Name" />
+							<input type="hidden" value="1B" id="Set" name="Set" />
+
+							
+							
+							</p>
+							
+				</form>
+				
+				<div class="row">
+					<div id="footer" class="col-sm-12">
+						<br />
+						<!--Need to embed the email here to stop spam mail-->
+						<!--Links under references in D2L-->
+						Spencer Pollock A00924319 <a href='&#109;a&#105;&#108;&#116;o&#58;s&#114;%65%&#55;0%6F&#37;6Cl%6F&#99;k&#64;&#103;m%61il&#46;com'>Email Spencer</a>
+						Clyde Chen A00914442 <a href='m&#97;ilto&#58;%63le%65&#100;%2Ec%4&#48;&#37;68&#111;%74%6D&#97;i&#108;&#46;%6&#51;&#111;m'>Email Clyde</a>
+						<!--Name1 student#1 email1 name2 student#2 email2 set-->
+					</div>
+				</div>
+			
+			</div>
+		
+		</div>
+		
+	</body>
+	
+</html>

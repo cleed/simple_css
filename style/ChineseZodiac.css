@@ -1,0 +1,64 @@
+html {
+	font-family: Arial, Sans-serif;
+}
+
+body {
+    background: url("../Images/bg1.png");
+}
+
+/* not to load background image (bg1.png) when on mobile 
+    References:
+        http://www.w3schools.com/css/css_syntax.asp
+        http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+    */
+@media (max-width: 1200px){
+    body{
+        background: none;
+    }
+}
+
+.container {
+    background-color: white;
+}
+
+#nav {
+	word-spacing: 3px;
+	text-align: center;
+}
+
+#header {
+	margin: auto;
+	text-align: center;
+}
+
+#pleft {
+    text-align: center;
+}
+
+#pbottom {
+	text-align: center;
+}
+
+#footer {
+	height: 50px;
+	background-color: #ccc;
+	text-align: center;
+	bottom: 0;
+}
+
+#zodiac {
+	text-align: center;
+    width: auto;
+}
+
+#links {
+	text-align: center;
+}
+
+.button {
+	text-align: center;
+}
+
+#img {
+	text-align: center;
+}
